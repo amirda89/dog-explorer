@@ -1,0 +1,312 @@
+export default function Hero() {
+  return (
+    <div class="w-[390px] mx-auto px-[24px] pt-[20px] pb-[32px] bg-[#F6FBF6] xl:w-[1280px] xl:px-[48px] xl:pt-[32px] dark:bg-[rgba(0,0,0,0.9)]">
+      {/* MOBILE */}
+      <div class="xl:hidden">
+        <div class="rounded-2xl w-[125px] uppercase bg-[#FFDCC1] font-[Plus Jakarta Sans] font-medium text-[11px] text-[#6C3A00] flex items-center justify-center py-[4px]">
+          🐾 daily joy feed
+        </div>
+        <div class="font-extrabold text-[32px] font-[Plus Jakarta Sans] pt-[12px]">
+          Meet a <span class="text-[#8D4B00]">New Friend</span>
+        </div>
+        <p class="font-[Plus Jakarta Sans] text-[#554336] text-[16px] leading-[24px] font-light pb-[20px]">
+          Discover dogs from around the world, one adorable face at a time.
+        </p>
+        <div class="rounded-3xl w-[342px] overflow-hidden bg-white shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)]">
+          <div class="w-full bg-cover relative h-[384px] bg-center">
+            <div id="heroImage" class="absolute inset-0 overflow-hidden">
+              {/* GENERATED */}
+            </div>
+            <div class="bg-[rgba(255,255,255,0.9)] px-[12px] py-[6px] font-[Plus Jakarta Sans] font-normal text-[12px] leading-[16px] tracking-normal w-[137px] rounded-2xl absolute top-[12px] left-[12px]">
+              🐾 Golden Retriever
+            </div>
+            <div class="absolute bottom-0 left-0 w-[342px] h-[150px] bg-[linear-gradient(0deg,rgba(24,29,26,0.8)_0%,rgba(24,29,26,0.4)_50%,rgba(24,29,26,0)_100%)]">
+              <div class="flex w-[310px] mx-auto mt-[64px]">
+                <div>
+                  <div class="flex gap-[8px] items-center">
+                    <h3 class="font-[Plus Jakarta Sans] font-semibold text-[22px] leading-[27px] tracking-normal text-white">
+                      Sunny Cooper
+                    </h3>
+                    <div class="rounded-2xl bg-[#FC9D3D] text-[#6A3900] font-[Plus Jakarta Sans] text-[11px] leading-none flex items-center px-[8px] py-[2px] h-[18px]">
+                      2yrs
+                    </div>
+                  </div>
+                  <p class="font-[Plus Jakarta Sans] font-normal text-[14px] leading-[20px] tracking-normal text-[rgba(223,228,223,0.9)]">
+                    Always enthusiastic, tennis ball aficionado & puddle seeker.
+                  </p>
+                </div>
+                <div class="flex items-end">
+                  <div class="px-[10px] py-[4px] flex gap-[4px] font-[Plus Jakarta Sans] font-bold text-[11px] leading-[14px] tracking-normal text-white bg-[rgba(255,255,255,0.2)] rounded-2xl">
+                    <i
+                      data-lucide="circle-star"
+                      width="15"
+                      height="15"
+                      stroke-width="2"
+                      color="#FFDCC1"
+                    ></i>
+                    Pawsome
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex gap-[10px] w-[310px] mx-auto mt-[16px]">
+              <button class="w-[150px] font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal bg-[#FFDCC1] hover:bg-[#8D4B00] text-[#2E1500] hover:text-white rounded-3xl flex items-center justify-center py-[3px] px-[16px] hover:shadow-[0px_4px_14px_0px_rgba(141,75,0,0.25)] group transition-colors duration-200">
+                <i
+                  data-lucide="shuffle"
+                  width="13"
+                  height="13"
+                  stroke-width="2"
+                  color="#2E1500"
+                  class="group-hover:text-white"
+                ></i>
+                <p class="px-[15px] w-[90px]">Show Another</p>
+              </button>
+              <button class="w-[150px] font-[Plus Jakarta Sans] rounded-3xl bg-[#FFDCC1] py-[13px] px-[16px] flex items-center gap-[6px] font-medium text-[14px] leading-[20px] text-[#2E1500] justify-center hover:bg-[#8D4B00] hover:text-white group hover:shadow-[0px_4px_14px_0px_rgba(141,75,0,0.25)] transition-colors duration-200">
+                <i
+                  data-lucide="paw-print"
+                  width="16"
+                  height="16"
+                  color="#2E1500"
+                  stroke-width="4"
+                  class="group-hover:text-white"
+                ></i>
+                Breeds
+              </button>
+            </div>
+            <div class="flex gap-[8px] mt-[18px] mb-[16px] justify-center">
+              <div class="w-[98px] h-[52px] bg-[#F0F5F0] font-[Plus Jakarta Sans] font-normal text-[#554336] text-center text-[12px] flex justify-center flex-col">
+                <div class="font-semibold text-[#8D4B00]">10 / 10</div>
+                Firendliness
+              </div>
+              <div class="w-[98px] h-[52px] bg-[#F0F5F0] font-[Plus Jakarta Sans] font-normal text-[#554336] text-center text-[12px] flex justify-center flex-col">
+                <div class="font-semibold text-[#8D4B00]">Vibrant</div>
+                Energy
+              </div>
+              <div class="w-[98px] h-[52px] bg-[#F0F5F0] font-[Plus Jakarta Sans] font-normal text-[#554336] text-center text-[12px] flex justify-center flex-col">
+                <div class="font-semibold text-[#8D4B00]">Infinite</div>
+                Cuddles
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <!-- DESKTOP --> */}
+      <div class="hidden xl:flex justify-between">
+        <div class="w-[466px]">
+          <div class="flex items-center gap-[8px] font-[Plus Jakarta Sans] font-medium text-[12px] leading-[16px] tracking-normal text-[#2E1500] px-[16px] py-[6px] bg-[#FFDCC1] rounded-2xl shadow-sm w-[137px] mt-[9px] dark:gap-0 dark:text-[#FFC174] dark:py-[4px] dark:bg-[#282A29]">
+            <i
+              data-lucide="paw-print"
+              width="13"
+              height="13"
+              color="#2E1500"
+              stroke-width="4"
+              class="dark:hidden"
+            ></i>
+            <span class="hidden dark:flex">🐾</span>Daily Joy Feed
+          </div>
+          <h1 class="font-[Plus Jakarta Sans] font-bold text-[48px] leading-[60px] tracking-[-1.2px] text-[#181D1A] mt-[24px] dark:text-[#E2E3E0]">
+            Meet a New
+            <span class="underline text-[#8D4B00] decoration-[#181D1A] decoration-2 underline-offset-4 dark:text-[#F59E0B] dark:decoration-[#F59E0B]">
+              Friend
+            </span>
+          </h1>
+          <p class="font-[Plus Jakarta Sans] font-normal text-[18px] leading-[28px] tracking-normal text-[#554336] mt-[16px] dark:text-[#D8C3AD]">
+            Discover dogs from around the world, one adorable face at a time.
+            Pure companionship, heart-melting grins, and gentle spirits.
+          </p>
+          <div class="flex gap-[16px] mt-[32px]">
+            <button class="text-white bg-[#8D4B00] rounded-3xl flex items-center gap-[12px] px-[28px] py-[14px] font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal dark:text-[#613B00] dark:bg-[#F59E0B]">
+              <i
+                data-lucide="refresh-ccw"
+                width="13"
+                height="18"
+                stroke-width="3"
+                color="white"
+                class="dark:hidden"
+              ></i>
+              <i
+                data-lucide="shuffle"
+                width="13"
+                height="13"
+                stroke-width="3"
+                color="#613B00"
+                class="hidden dark:block"
+              ></i>
+              Show Another
+            </button>
+            <button class="bg-[#E5E9E4] rounded-3xl font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal text-[#181D1A] px-[28px] py-[14px] flex gap-[4px] dark:text-white dark:bg-[#1E201F] items-center">
+              Explore Breeds
+              <i
+                data-lucide="move-down"
+                width="10"
+                height="15"
+                color="#E2E3E0"
+                stroke-width="3"
+                class="hidden dark:flex"
+              ></i>
+            </button>
+          </div>
+          <div class="flex w-full gap-[12px] mt-[40px] dark:hidden">
+            <div class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1 bg-white justify-center rounded-2xl shadow-[0px_1px_2px_0px_#0000000D]">
+              <i
+                data-lucide="face-slightly-smiling"
+                color="#8D4B00"
+                width="20"
+                height="20"
+                stroke-width="3"
+              ></i>
+              <p class="text-[11px] text-[#887364]">Friendliness</p>
+              <p class="text-[12px] text-[#181D1A]">10 / 10</p>
+            </div>
+            <div class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1 bg-white justify-center rounded-2xl shadow-[0px_1px_2px_0px_#0000000D]">
+              <i
+                data-lucide="zap"
+                color="#8D4B00"
+                width="16"
+                height="20"
+                stroke-width="3"
+              ></i>
+              <p class="text-[11px] text-[#887364]">Energy Level</p>
+              <p class="text-[12px] text-[#181D1A]">Vibrant</p>
+            </div>
+          </div>
+          <div class="hidden dark:flex gap-[16px] mt-[32px] font-[Plus Jakarta Sans]">
+            <div class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]">
+              <div class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal">
+                Friendliness
+                <i
+                  data-lucide="face-slightly-smiling"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]">
+                10 / 10
+              </p>
+              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+            </div>
+            <div class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]">
+              <div class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal">
+                Energy Level
+                <i
+                  data-lucide="zap"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]">
+                Vibrant
+              </p>
+              <div class="bg-[#282A29] w-full flex h-[8px] relative rounded-3xl">
+                <div class="bg-[#F59E0B] rounded-3xl flex w-[80%] h-[8px] absolute top-0 left-0"></div>
+              </div>
+            </div>
+            <div class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]">
+              <div class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal">
+                Mood Boost
+                <i
+                  data-lucide="flame"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]">
+                Instant
+              </p>
+              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[653px] flex justify-center">
+          <div class="rounded-[24px] bg-white shadow-[0px_20px_50px_0px_#4028141F] p-[12px] w-[576px] dark:w-[483px] dark:rounded-[32px] dark:p-[16px] dark:bg-[#1E201F]">
+            <div class="rounded-[16px] overflow-hidden relative opacity-80 bg-[linear-gradient(0deg,rgba(44,50,46,0.7)_0%,rgba(44,50,46,0)_50%,rgba(44,50,46,0)_100%)] w-[552px] h-[408px] dark:rounded-[32px] dark:w-[451px] dark:h-[420px]">
+              <div
+                id="heroImageDesktop"
+                class="absolute inset-0 overflow-hidden"
+              >
+                {/* <!-- GENERATED --> */}
+              </div>
+              <div class="flex gap-[8px] items-center px-[16px] py-[8px] dark:py-[4px] dark:bg-[rgba(26,28,27,0.8)] rounded-3xl bg-white font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-[0.35px] text-[#181D1A] absolute top-[16px] left-[16px] dark:text-[12px] dark:leading-[16px] dark:tracking-normal dark:text-[#E2E3E0]">
+                <i
+                  data-lucide="paw-print"
+                  width="15"
+                  height="15"
+                  color="#8D4B00"
+                  stroke-width="3"
+                  class="dark:hidden"
+                ></i>
+                <div class="rounded-full bg-[#F59E0B] hidden dark:flex w-[8px] h-[8px]"></div>
+                Golden Retriever
+              </div>
+              <div class="hidden dark:flex absolute top-[16px] right-[16px] rounded-3xl bg-[#F59E0B] font-[Plus Jakarta Sans] py-[4px] px-[16px] text-[#613B00] text-[11px] leading-[14px] tracking-normal font-medium">
+                Gentle Giant
+              </div>
+              <div class="flex absolute left-[16px] bottom-[16px] w-[520px] dark:w-[420px]">
+                <div class="font-[Plus Jakarta Sans]">
+                  <h3 class="font-semibold text-[22px] leading-[30px] tracking-[-0.55px] text-white">
+                    Sunny Cooper
+                  </h3>
+                  <p class="font-normal text-[14px] leading-[20px] tracking-normal text-white dark:text-[#D8C3AD]">
+                    Gentle companion • Loves afternoon park fetch
+                  </p>
+                </div>
+                <div class="flex items-center justify-end flex-1">
+                  <div class="bg-[rgba(255,255,255,0.2)] rounded-3xl flex gap-[6px] px-[12px] py-[4px] text-white font-medium text-[11px] leading-[14px] tracking-normal dark:hidden">
+                    <i
+                      data-lucide="badge-check"
+                      width="14"
+                      height="14"
+                      stroke-width="3"
+                      color="#FFDCC1"
+                    ></i>
+                    Gentle Giant
+                  </div>
+                  <div class="hidden dark:flex bg-[rgba(40,42,41,0.9)] w-[40px] h-[40px] rounded-full items-center justify-center">
+                    <i
+                      data-lucide="paw-print"
+                      width="16"
+                      height="16"
+                      color="#FFC174"
+                      stroke-width="3"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden dark:flex justify-between mt-[16px] font-[Plus Jakarta Sans] font-medium text-[11px] leading-[14px] tracking-normal text-[#D8C3AD]">
+              <div class="flex items-center gap-[4px]">
+                <i
+                  data-lucide="circle-star"
+                  width="15"
+                  height="15"
+                  stroke-width="3"
+                  color="#FFC174"
+                ></i>
+                AKC Sporting Group
+              </div>
+              <div class="flex items-center gap-[4px]">
+                <i
+                  data-lucide="clock-8"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                  color="#FFC174"
+                ></i>
+                10-12 years
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,146 @@
+export default function Gallery() {
+  return (
+    <div class="w-[390px] xl:w-[1280px] mx-auto bg-[rgba(246,251,245,0.9)] font-[Plus Jakarta Sans] py-8 px-6 dark:bg-[rgba(0,0,0,0.9)]">
+      <div class="flex xl:hidden items-center uppercase font-medium text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-[6px] mb-1">
+        <i
+          data-lucide="sparkles"
+          width="10"
+          height="16"
+          stroke-width="2"
+          color="#8D4B00"
+        ></i>
+        community snaps
+      </div>
+      <h2 class="font-semibold text-[26px] leading-[34px] text-[#181D1A] xl:hidden dark:text-white">
+        More Dogs to Love
+      </h2>
+      <p class="font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] mt-1 mb-5 xl:hidden">
+        A lively collection of everyday wagging tails, sweet snouts, and happy
+        smiles.
+      </p>
+      <div class="hidden xl:flex flex-col gap-4 items-center">
+        <div class="flex items-center capitalize font-medium text-[11px] leading-[14px] tracking-normal text-[#3C0800] gap-[6px] px-[14px] py-[4px] rounded-3xl bg-[#FFDBD2] dark:bg-[#282A29] dark:text-[#FFC174]">
+          <i
+            data-lucide="sparkles"
+            width="10"
+            height="16"
+            stroke-width="2"
+            color="#3C0800"
+            class="xl:dark:hidden"
+          ></i>
+          <span class="hidden xl:dark:flex">📸</span>community snaps
+        </div>
+        <h2 class="font-semibold text-[26px] leading-[34px] text-[#181D1A] dark:text-[#E2E3E0]">
+          More Dogs to Love
+        </h2>
+        <p class="font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] mt-1 mb-5 xl:text-[16px] xl:leading-[24px] xl:m-0 dark:text-[#D8C3AD]">
+          A lively collection of everyday wagging tails, sweet snouts, and happy
+          smiles.
+        </p>
+      </div>
+      <div class="flex xl:hidden gap-3 mb-8">
+        <div class="flex flex-col gap-3">
+          <div class="relative bg-center bg-cover w-[165px] h-[220px] shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+            <div class="absolute inset-0" id="galleryImage1">
+              {/* <!-- GENERATED --> */}
+            </div>
+            <div class="capitalize font-medium text-[11px] leading-[14px] tracking-normal text-white absolute left-[10px] bottom-[10px]">
+              garden sprinter
+            </div>
+          </div>
+          <div class="relative bg-center bg-cover w-[165px] h-[165px] shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+            <div class="absolute inset-0" id="galleryImage2">
+              {/* <!-- GENERATED --> */}
+            </div>
+            <div class="capitalize font-medium text-[11px] leading-[14px] tracking-normal text-white absolute left-[10px] bottom-[10px]">
+              curious mio
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="relative bg-cover bg-center w-[165px] h-[165px] shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+            <div class="absolute inset-0" id="galleryImage3">
+              {/* <!-- GENERATED --> */}
+            </div>
+            <div class="capitalize font-medium text-[11px] leading-[14px] tracking-normal text-white absolute left-[10px] bottom-[10px]">
+              sunny golden
+            </div>
+          </div>
+          <div class="relative bg-cover bg-center w-[165px] h-[220px] shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+            <div class="absolute inset-0" id="galleryImage4">
+              {/* <!-- GENERATED --> */}
+            </div>
+            <div class="capitalize font-medium text-[11px] leading-[14px] tracking-normal text-white absolute left-[10px] bottom-[10px]">
+              sunny path
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden xl:flex flex-col gap-6 items-center my-10">
+        <div class="flex gap-6">
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage5" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage6" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage7" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage8" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-6 dark:hidden">
+          <div class="rounded-2xl bg-cover bg-center bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage9" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage10" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage11" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+          <div class="rounded-2xl bg-cover bg-center bg-[#EBEFEA] shadow-[0_1px_2px_#0000000D] overflow-hidden relative h-[370px] w-[278px]">
+            <div id="galleryImage12" class="absolute inset-0">
+              {/* <!-- GENERATED --> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="capitalize font-medium text-[14px] leading-[20px] tracking-normal text-[#8D4B00] flex items-center justify-center mx-auto gap-2 bg-white py-[14px] px-6 rounded-3xl shadow-[0_4px_16px_rgba(64,40,20,0.06)] xl:mt-8 dark:bg-[#1E201F] dark:text-white">
+        <i
+          data-lucide="paw-print"
+          width="16"
+          height="16"
+          stroke-width="2"
+          color="#8D4B00"
+          class="dark:hidden"
+        ></i>
+        <span class="hidden dark:flex">🐾</span>show more pups
+        <i
+          data-lucide="rotate-ccw"
+          width="16"
+          height="16"
+          stroke-width="2"
+          color="#FFC174"
+          class="hidden dark:flex"
+        ></i>
+      </button>
+    </div>
+  );
+}

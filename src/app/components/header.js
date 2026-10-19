@@ -1,0 +1,66 @@
+export default function Header() {
+  return (
+    <header class="flex items-center mx-auto w-[390px] justify-between px-[24px] h-[64px] bg-[rgba(246,251,245,0.85)] dark:bg-[rgba(26,28,27,0.9)] shadow-[0_1px_8px_rgba(64,40,20,0.04)] backdrop-blur-xl xl:w-[1280px] xl:px-[48px] font-sans">
+      <div class="flex items-center w-[165px] justify-between cursor-pointer">
+        <img src="../images/logo.png" alt="logo" width="32px" height="32px" />
+        <div class="flex flex-col">
+          <h2 class="font-medium text-[22px] leading-[27.5px] text-center text-[#8D4B00] dark:text-white">
+            Dog Explorer
+          </h2>
+          <p class="font-light text-[11px] leading-none text-[#554336] xl:hidden">
+            Discover
+          </p>
+        </div>
+      </div>
+      <nav class="hidden xl:flex gap-[20px]">
+        <a
+          href="#"
+          class="font-normal text-[14px] text-[#554336] hover:text-white cursor-pointer hover:bg-[#B15F00] rounded-2xl py-[6px] px-[20px] dark:text-[#D8C3AD] dark:hover:bg-[#F59E0B] dark:hover:text-[#613B00] transition-all duration-200"
+        >
+          Discover
+        </a>
+        <a
+          href="#"
+          class="font-normal text-[14px] text-[#554336] hover:text-white hover:cursor-pointer hover:bg-[#B15F00] rounded-2xl py-[6px] px-[20px] dark:text-[#D8C3AD] dark:hover:bg-[#F59E0B] dark:hover:text-[#613B00] transition-all duration-200"
+        >
+          Breeds
+        </a>
+        <a
+          href="#"
+          class="font-normal text-[14px] text-[#554336] hover:text-white hover:cursor-pointer hover:bg-[#B15F00] rounded-2xl py-[6px] px-[20px] dark:text-[#D8C3AD] dark:hover:bg-[#F59E0B] dark:hover:text-[#613B00] transition-all duration-200"
+        >
+          Gallery
+        </a>
+      </nav>
+      <div class="w-[92px] flex xl:w-[36px] gap-2 justify-center">
+        <button class="w-[30px] flex items-center justify-center xl:hidden cursor-pointer rounded-full text-[#554336] hover:bg-[#d1d1d1] dark:hover:bg-[#383a39] dark:text-[#FFC174] transition-all duration-200">
+          <i data-lucide="search" width="17" height="17" stroke-width="2"></i>
+        </button>
+        <button
+          class="w-[44px] flex items-center justify-center rounded-full xl:bg-[#EBEFEA] xl:h-[36px] xl:w-[36px] dark:hidden cursor-pointer hover:bg-[#d1d1d1] sm:w-[30px] sm:h-[30px] transition-all duration-200"
+          id="sun-btn"
+        >
+          <i
+            data-lucide="sun"
+            color="#554336"
+            width="17"
+            height="17"
+            stroke-width="2"
+          ></i>
+        </button>
+        <button
+          class="w-[44px] hidden dark:flex items-center justify-center rounded-full xl:bg-[#1E201F] xl:h-[36px] xl:w-[36px] cursor-pointer hover:bg-[#383a39] sm:w-[30px] sm:h-[30px] transition-all duration-200"
+          id="moon-btn"
+        >
+          <i
+            data-lucide="moon"
+            color="#FFC174"
+            width="15"
+            height="15"
+            stroke-width="2"
+          ></i>
+        </button>
+      </div>
+    </header>
+  );
+}
