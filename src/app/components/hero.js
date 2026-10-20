@@ -87,16 +87,19 @@ export default function Hero() {
               title="Friendliness"
               body="10 / 10"
               d="M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01"
+              w="full"
             />
             <HeroCard
               title="Energy Level"
               body="Vibrant"
               d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"
+              w="4/5"
             />
             <HeroCard
               title="Mood Boost"
               body="Instant"
               d="M12 3c1 5 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 3 1 4 2 4 2-3 1-6 1-9Z"
+              w="full"
             />
           </div>
         </div>

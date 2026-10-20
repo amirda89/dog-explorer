@@ -22,7 +22,7 @@ export default function HeroCard(props) {
       </div>
       <span className="font-bold text-xl text-stone-200">{props.body}</span>
       <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden mt-1">
-        <div className="bg-amber-500 h-full w-full rounded-full" />
+        <div className={`bg-amber-500 h-full w-${props.w} rounded-full`} />
       </div>
     </div>
   );
