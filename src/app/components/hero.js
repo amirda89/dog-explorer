@@ -12,7 +12,7 @@ export default function Hero() {
         <p class="font-[Plus Jakarta Sans] text-[#554336] text-[16px] leading-[24px] font-light pb-[20px]">
           Discover dogs from around the world, one adorable face at a time.
         </p>
-        <div class="rounded-3xl w-[342px] overflow-hidden bg-white shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)]">
+        <div class="rounded-3xl w-[342px] overflow-hidden bg-white shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)] dark:bg-[#1E201F]">
           <div class="w-full bg-cover relative h-[384px] bg-center">
             <div id="heroImage" class="absolute inset-0 overflow-hidden">
               {/* GENERATED */}
