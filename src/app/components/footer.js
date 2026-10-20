@@ -1,78 +1,37 @@
 export default function Footer() {
   return (
-    <div class="w-[390px] mx-auto bg-[rgba(249,249,249,0.9)] flex px-[50px] py-[10px] justify-between items-center shadow-[0_-4px_20px_#4028140F] backdrop-blur-sm xl:w-[1280px] xl:p-0 dark:bg-[#0D0F0E]">
-      <div class="flex xl:hidden w-full justify-between">
-        <div class="flex flex-col justify-center items-center text-[#8D4B00] font-medium text-[11px] leading-[14px] tracking-normal rounded-sm hover:bg-[#a6a6a6] p-2 transition-colors duration-200">
-          <i
-            data-lucide="compass"
-            width="20"
-            height="20"
-            stroke-width="2"
-            color="#887364"
-          ></i>
-          Discover
-        </div>
-        <div class="flex flex-col justify-center items-center text-[#8D4B00] font-medium text-[11px] leading-[14px] tracking-normal rounded-sm hover:bg-[#a6a6a6] p-2 transition-colors duration-200">
-          <i
-            data-lucide="paw-print"
-            width="20"
-            height="20"
-            stroke-width="2"
-            color="#887364"
-          ></i>
-          Breeds
-        </div>
-        <div class="flex flex-col justify-center items-center text-[#8D4B00] font-medium text-[11px] leading-[14px] tracking-normal rounded-sm hover:bg-[#a6a6a6] p-2 transition-colors duration-200">
-          <i
-            data-lucide="images"
-            width="20"
-            height="20"
-            stroke-width="2"
-            color="#887364"
-          ></i>
-          Gallery
-        </div>
-      </div>
-      <div class="hidden xl:flex items-center justify-between py-8 px-12 w-full">
-        <div class="flex items-center gap-3 font-normal text-[16px] leading-[24px] tracking-normal text-[#554336] dark:text-[#D8C3AD]">
-          <i
-            data-lucide="paw-print"
-            width="18"
-            height="18"
-            stroke-width="2"
-            color="#887364"
-            class="dark:hidden"
-          ></i>
+    <footer className="w-full bg-zinc-950 mt-10 py-6">
+      <div className="w-full px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p className="font-normal text-sm leading-5 text-stone-300 text-center md:text-left">
           Crafted with warmth for dog lovers everywhere.
-        </div>
-        <div class="flex items-center gap-8">
-          <button
-            class="font-medium text-[12px] leading-[16px] tracking-normal font-medium text-[12px] leading-[16px] tracking-normal text-[#554336] flex items-center gap-1 dark:text-[#D8C3AD] cursor-pointer"
-            id="back-to-top-btn"
+        </p>
+        <div className="flex items-center gap-6">
+          <a
+            className="font-semibold text-xs text-stone-300 hover:text-amber-300 transition-colors flex items-center gap-1"
+            href="#"
           >
             Back to Top
-            <i
-              data-lucide="move-up"
-              width="10"
-              height="10"
-              stroke-width="2"
-              color="#D8C3AD"
-              class="hidden dark:flex"
-            ></i>
-          </button>
-          <div class="flex items-center gap-1 text-[#887364] text-[11px] leading-[14px] dark:text-[#B5BAB4]">
-            <i
-              data-lucide="copyright"
-              width="13"
-              height="13"
-              stroke-width="2"
-              color="#887364"
-              class="dark:text-[#B5BAB4]"
-            ></i>
-            Dog Explorer
-          </div>
+            <svg
+              aria-hidden="true"
+              className="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width={20}
+              height={20}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 20V4m-6 6 6-6 6 6" />
+            </svg>
+          </a>
+          <span className="font-normal text-sm leading-5 text-stone-400">
+            © Dog Explorer
+          </span>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

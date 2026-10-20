@@ -1,366 +1,256 @@
 export default function Breeds() {
   return (
-    <div class="w-[390px] mx-auto bg-[#F6FBF6] font-[Plus Jakarta Sans] xl:w-[1280px] dark:bg-black">
-      <div class="w-full rounded-t-4xl bg-[#F0F5F0] px-[24px] py-[32px] xl:w-[1280px] xl:rounded-none xl:px-[48px] xl:py-[64px] dark:bg-[rgba(12,12,12,0.9)] dark:py-10 dark:px-8">
-        <div class="uppercase font-medium text-[11px] leading-[14px] tracking-[0.55px] text-[#8D4B00] flex items-center gap-[6px] xl:text-[12px] xl:leading-[16px] xl:tracking-[0.6px] dark:gap-0 dark:bg-[#282A29] dark:w-[172px] dark:justify-center dark:rounded-3xl dark:py-1 dark:text-[#FFC174]">
-          <span class="xl:hidden dark:flex">🐾</span>
-          <i
-            data-lucide="shapes"
-            width="13"
-            height="13"
-            stroke-width="3"
-            color="#8E4E00"
-            class="hidden xl:flex dark:hidden"
-          ></i>
-          breed compendium
-        </div>
-        <h1 class="font-semibold text-[26px] leading-[34px] tracking-[-0.65px] text-[#181D1A] mt-1 xl:mt-[14px] xl:text-[36px] xl:leading-[44px] xl:tracking-normal dark:mt-1 dark:text-[#E2E3E0] dark:text-[32px] dark:leading-[40px]">
-          Find Your Favorite Breed
-        </h1>
-        <p class="font-light text-[14px] leading-[20px] tracking-normal text-[#554336] mt-1 mb-5 xl:hidden">
-          Explore signature traits, temperaments, and personalities tailored to
-          your home.
-        </p>
-        <div class="xl:flex flex-1 items-center justify-between mt-2 mb-10 hidden dark:mt-1 dark:mb-6">
-          <p class="w-[530px] font-normal text-[16px] leading-[24px] tracking-normal text-[#554336] dark:text-[#D8C3AD] dark:w-[670px]">
-            Choose from hundreds of friendly breeds and see happy pups ready to
-            brighten your day.
-          </p>
-          <div class="flex items-center gap-3 dark:gap-2 dark:bg-[#1E201F] dark:shadow-[0_1px_2px_#0000000D] dark:p-1 dark:rounded-3xl">
-            <div class="flex items-center gap-4 py-3 bg-white shadow-[0_1px_2px_#0000000D] pl-4 rounded-3xl text-[14px] leading-[20px] tracking-normal text-[#181D1A] font-medium dark:text-[#E2E3E0] dark:bg-[#282A29] dark:text-[12px] dark:leading-[16px] dark:py-1">
-              Pembroke Welsh Corgi
-              <i
-                data-lucide="chevron-down"
-                width="15"
-                height="10"
-                stroke-width="2"
-                color="brown"
-                class="dark:text-[#D8C3AD]"
-              ></i>
+    <section
+      className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10 bg-zinc-900/50"
+      id="breeds"
+    >
+      <div className="max-w-7xl mx-auto flex flex-col gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div className="flex flex-col items-start gap-1 max-w-2xl">
+            <div className="inline-flex items-center gap-1 px-4 py-1 rounded-full bg-zinc-800 text-amber-300 font-semibold text-xs">
+              <span>🐾</span>
+              <span>BREED COMPENDIUM</span>
             </div>
-            <div class="bg-[#8E4E00] rounded-3xl py-3 px-6 shadow-[0_1px_2px_#0000000D] text-[14px] leading-[20px] tracking-normal text-white font-medium dark:bg-[#F59E0B] dark:text-[#613B00] dark:text-[12px] dark:leading-[16px] dark:py-1">
+            <h2 className="font-bold text-3xl leading-tight text-stone-200 tracking-tight">
+              Find Your Favorite Breed
+            </h2>
+            <p className="font-normal text-base leading-6 text-stone-300">
+              Choose from hundreds of friendly breeds and see happy pups ready
+              to brighten your day.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 bg-zinc-900 p-1 rounded-full shadow-sm">
+            <div className="relative">
+              <select
+                aria-label="Select dog breed"
+                className="appearance-none bg-zinc-800 text-stone-200 font-semibold text-xs rounded-full pl-4 pr-10 py-1 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
+                id="breedSelect"
+              >
+                <option defaultValue value="corgi">
+                  Pembroke Welsh Corgi
+                </option>
+                <option value="golden">Golden Retriever</option>
+                <option value="frenchie">French Bulldog</option>
+                <option value="shiba">Shiba Inu</option>
+                <option value="samoyed">Samoyed</option>
+              </select>
+              <svg
+                aria-hidden="true"
+                className="shrink-0 size-5 text-stone-300 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <button
+              className="px-6 py-1 rounded-full bg-amber-500 text-amber-950 font-semibold text-xs hover:brightness-105 transition-all"
+              type="button"
+            >
               Show Dogs
-            </div>
+            </button>
           </div>
         </div>
-        <div class="rounded-3xl bg-white shadow-[0_1px 2px_#0000000D] flex items-center justify-between p-[8px] mb-4 xl:hidden">
-          <div class="flex items-center justify-between flex-1 mr-4">
-            <div class="flex items-center pl-[12px] text-[14px] leading-[20px] tracking-normal text-[#181D1A] gap-2">
-              <i
-                data-lucide="search"
-                width="15"
-                height="15"
-                stroke-width="3"
-                color="#887364"
-              ></i>
-              All Breeds (Selected)
-            </div>
-            <i
-              data-lucide="chevron-down"
-              width="15"
-              height="10"
-              stroke-width="2"
-              color="brown"
-            ></i>
-          </div>
-          <div class="rounded-3xl bg-[#8D4B00] text-white px-4 py-3 text-[12px] leading-[16px] tracking-normal">
-            Filter
-          </div>
-        </div>
-        <div class="flex gap-2 overflow-hidden items-center whitespace-nowrap overflow-x-scroll">
-          <p class="uppercase hidden xl:flex pr-2 font-medium text-[11px] leading-[14px] tracking-normal text-[#887364] items-center dark:hidden">
-            quick picks:
-          </p>
-          <div class="bg-[#8D4B00] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-white py-[11px] px-4 xl:text-[12px] xl:leading-[16px] xl:py-2 dark:bg-[#F59E0B] dark:py-1 dark:text-[#613B00]">
-            <span class="xl:hidden">🐾</span> All Breeds
-          </div>
-          <div class="bg-white rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] py-[11px] px-4 xl:text-[12px] xl:leading-[16px] xl:py-2 dark:py-1 dark:bg-[#1E201F] dark:text-[#D8C3AD]">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1">
+          <button
+            className="px-4 py-1 rounded-full bg-amber-500 text-amber-950 font-semibold text-xs whitespace-nowrap shadow-sm"
+            type="button"
+          >
+            All Breeds
+          </button>
+          <button
+            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
+            type="button"
+          >
             Pembroke Welsh Corgi
-          </div>
-          <div class="bg-white rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] py-[11px] px-4 xl:text-[12px] xl:leading-[16px] xl:py-2 dark:py-1 dark:bg-[#1E201F] dark:text-[#D8C3AD]">
+          </button>
+          <button
+            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
+            type="button"
+          >
             Golden Retriever
-          </div>
-          <div class="hidden xl:flex bg-white rounded-3xl font-medium tracking-normal text-[#554336] px-4 text-[12px] leading-[16px] py-2 dark:py-1 dark:bg-[#1E201F] dark:text-[#D8C3AD]">
+          </button>
+          <button
+            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
+            type="button"
+          >
             French Bulldog
-          </div>
-          <div class="hidden xl:flex bg-white rounded-3xl font-medium tracking-normal text-[#554336] px-4 text-[12px] leading-[16px] py-2 dark:py-1 dark:bg-[#1E201F] dark:text-[#D8C3AD]">
+          </button>
+          <button
+            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
+            type="button"
+          >
             Shiba Inu
-          </div>
-          <div class="hidden xl:flex bg-white rounded-3xl font-medium tracking-normal text-[#554336] px-4 text-[12px] leading-[16px] py-2 dark:py-1 dark:bg-[#1E201F] dark:text-[#D8C3AD]">
+          </button>
+          <button
+            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
+            type="button"
+          >
             Samoyed
-          </div>
+          </button>
         </div>
-        <div class="bg-[rgba(255,220,193,0.6)] flex items-center justify-between p-[14px] mt-5 xl:mt-12 xl:rounded-2xl xl:bg-[#FFDCC1] xl:dark:mt-6 dark:bg-[#1E201F] dark:shadow-md">
-          <div class="flex items-center gap-3">
-            <div class="w-[40px] h-[40px] bg-[#FC9D3D] flex items-center justify-center rounded-full xl:rounded-2xl xl:bg-[rgba(46,21,0,0.1)] dark:bg-[rgba(245,158,11,0.2)] dark:rounded-full">
-              <i
-                data-lucide="medal"
-                width="16"
-                height="16"
-                stroke-width="2"
-                color="#6A3900"
-                class="dark:hidden"
-              ></i>
-              <i
-                data-lucide="circle-star"
-                width="23"
-                height="23"
-                stroke-width="2"
-                color="#FFC174"
-                class="hidden dark:flex"
-              ></i>
+        <div className="w-full bg-zinc-900 p-6 rounded-3xl shadow-md flex flex-col md:flex-row items-center justify-between gap-4 relative overflow-hidden">
+          <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-300/10 rounded-full blur-2xl pointer-events-none" />
+          <div className="flex items-center gap-4 z-10">
+            <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-300">
+              <svg
+                aria-hidden="true"
+                className="shrink-0 size-7"
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m12 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z" />
+              </svg>
             </div>
             <div>
-              <div class="flex items-center gap-[6px]">
-                <div class="font-semibold text-[14px] leading-[20px] tracking-normal text-[#2E1500] xl:text-[22px] xl:leading-[30px] dark:text-[20px] dark:leading-[28px] dark:text-[#E2E3E0] sm:dark:text-[14px]">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="font-bold text-xl text-stone-200">
                   Pembroke Welsh Corgi
-                </div>
-                <div class="uppercase rounded-3xl bg-[#8D4B00] px-[6px] text-white font-semibold text-[10px] leading-[24px] tracking-normal xl:bg-[rgba(46,21,0,0.1)] xl:px-[10px] xl:py-[2px] xl:font-medium xl:text-[#2E1500] xl:text-[11px] xl:leading-[14px] xl:capitalize dark:px-2 dark:bg-[#F59E0B] dark:leading-[14px] dark:text-[#613B00]">
-                  top pick
-                </div>
-                <div class="hidden xl:dark:flex py-1 px-2 bg-[#333534] rounded-3xl text-[#C3C8C2] text-[11px] leading-[14px] tracking-normal font-medium">
+                </h3>
+                <span className="px-2 py-0.5 rounded-full bg-amber-500 text-amber-950 font-semibold text-xs">
+                  Top Pick
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-700 text-stone-300 font-semibold text-xs">
                   Great with Kids
-                </div>
+                </span>
               </div>
-              <p class="text-[#6C3A00] text-[11px] leading-[14px] tracking-normal xl:hidden">
-                Great with Kids & Herding
-              </p>
-              <p class="hidden xl:flex font-normal text-[14px] leading-[20px] tracking-normal text-[#6C3A00] dark:text-[#D8C3AD]">
-                Playful & Bold • Herding Group • Adaptable Companion
+              <p className="font-normal text-sm leading-5 text-stone-300 mt-0.5">
+                Playful &amp; Bold • Herding Group • Adaptable Companion
               </p>
             </div>
           </div>
-          <i
-            data-lucide="move-right"
-            width="16"
-            height="16"
-            stroke-width="3"
-            color="#8D4B00"
-            class="xl:hidden"
-          ></i>
-          <div class="hidden xl:flex items-center gap-2 text-[#2E1500] text-[12px] leading-[16px] tracking-normal font-medium dark:hidden">
-            <i
-              data-lucide="user-round-group"
-              width="15"
-              height="15"
-              stroke-width="3"
-              color="#2E1500"
-            ></i>
-            Great with Kids
-          </div>
-          <div class="hidden dark:flex items-center gap-4">
-            <div class="xl:dark:flex hidden items-center gap-2 capitalize text-[12px] leading-[16px] tracking-normal text-[#D8C3AD] font-medium">
-              <span class="w-[8px] h-[8px] bg-[#F59E0B] rounded-full"></span>
-              high trainability
+          <div className="flex items-center gap-4 z-10 w-full md:w-auto justify-end">
+            <div className="hidden sm:flex items-center gap-2 text-stone-300 font-semibold text-xs">
+              <span className="w-2 h-2 rounded-full bg-amber-500" />
+              <span>High Trainability</span>
             </div>
-            <div class="capitalize bg-[#282A29] px-4 py-2 rounded-3xl text-[#FFC174] text-[12px] leading-[16px] tracking-normal xl:dark:flex hidden">
-              read breed guide
-            </div>
+            <button
+              className="px-4 py-1 rounded-full bg-zinc-800 text-amber-300 hover:bg-zinc-700 font-semibold text-xs transition-colors"
+              type="button"
+            >
+              Read Breed Guide
+            </button>
           </div>
         </div>
-        <div class="xl:flex justify-between gap-4 mt-10">
-          <div class="bg-white shadow-[0_1px_2px_#0000000D] mt-5 xl:mt-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]">
-            <div class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]">
-              <div id="breedImage1" class="absolute inset-0 overflow-hidden">
-                {/* <!-- GENERATED --> */}
-              </div>
-              <div class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
+              <img
+                alt=""
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
+              />
+              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
                 Pembroke Welsh Corgi
               </div>
             </div>
-            <div class="p-4 flex flex-col gap-2">
-              <div class="flex justify-between flex-1">
-                <div class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A] xl:font-semibold dark:text-[#E2E3E0]">
-                  Barnaby
-                </div>
-                <div class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1 xl:hidden">
-                  <i
-                    data-lucide="face-slightly-smiling"
-                    width="15"
-                    height="15"
-                    stroke-width="3"
-                    color="#8D4B00"
-                  ></i>
-                  1.4k smiles
-                </div>
-                <div class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center">
-                  2 years old
-                </div>
+            <div className="flex flex-col gap-1 pt-4">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-xl text-stone-200">Barnaby</h4>
+                <span className="text-amber-300 font-semibold text-xs">
+                  2 Years Old
+                </span>
               </div>
-              <p class="font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] dark:text-[#D8C3AD]">
-                Loves open fields & warm nap spots
+              <p className="font-normal text-sm leading-5 text-stone-300">
+                Loves open fields &amp; warm nap spots
               </p>
-              <div class="flex p-[2px] gap-[6px]">
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+              <div className="flex flex-wrap gap-1 pt-1">
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Affectionate
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Alert
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Smart
-                </div>
-              </div>
-              <div class="flex items-center flex-1 justify-between xl:hidden">
-                <div class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1">
-                  <i
-                    data-lucide="map-pin"
-                    width="12"
-                    height="15"
-                    stroke-width="2"
-                    color="#887364"
-                  ></i>
-                  Cotswolds, UK
-                </div>
-                <div class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal">
-                  View Profile
-                  <i
-                    data-lucide="chevron-right"
-                    width="10"
-                    height="12"
-                    stroke-width="2"
-                    color="#2E1500"
-                  ></i>
-                </div>
+                </span>
               </div>
             </div>
           </div>
-
-          <div class="bg-white shadow-[0_1px_2px_#0000000D] my-[20px] xl:m-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]">
-            <div class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]">
-              <div id="breedImage2" class="absolute inset-0">
-                {/* <!-- GENERATED --> */}
-              </div>
-              <div class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]">
+          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
+              <img
+                alt=""
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
+              />
+              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
                 French Bulldog
               </div>
             </div>
-            <div class="p-4 flex flex-col gap-2">
-              <div class="flex justify-between flex-1">
-                <div class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A] xl:font-semibold dark:text-[#E2E3E0]">
-                  Milo
-                </div>
-                <div class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1 xl:hidden">
-                  <i
-                    data-lucide="face-slightly-smiling"
-                    width="15"
-                    height="15"
-                    stroke-width="3"
-                    color="#8D4B00"
-                  ></i>
-                  2.1k smiles
-                </div>
-                <div class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center">
-                  1.5 years old
-                </div>
+            <div className="flex flex-col gap-1 pt-4">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-xl text-stone-200">Milo</h4>
+                <span className="text-amber-300 font-semibold text-xs">
+                  1.5 Years Old
+                </span>
               </div>
-              <p class="font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] dark:text-[#D8C3AD]">
-                Curious couch companion & snore champion
+              <p className="font-normal text-sm leading-5 text-stone-300">
+                Curious couch companion &amp; snore champion
               </p>
-              <div class="flex p-[2px] gap-[6px]">
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+              <div className="flex flex-wrap gap-1 pt-1">
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Quiet
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Loving
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Easygoing
-                </div>
-              </div>
-              <div class="flex items-center flex-1 justify-between xl:hidden">
-                <div class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1">
-                  <i
-                    data-lucide="map-pin"
-                    width="12"
-                    height="15"
-                    stroke-width="2"
-                    color="#887364"
-                  ></i>
-                  Lyon, France
-                </div>
-                <div class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal">
-                  View Profile
-                  <i
-                    data-lucide="chevron-right"
-                    width="10"
-                    height="12"
-                    stroke-width="2"
-                    color="#2E1500"
-                  ></i>
-                </div>
+                </span>
               </div>
             </div>
           </div>
-
-          <div class="bg-white shadow-[0_1px_2px_#0000000D] xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]">
-            <div class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]">
-              <div id="breedImage3" class="absolute inset-0">
-                {/* <!-- GENERATED --> */}
-              </div>
-              <div class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]">
+          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
+              <img
+                alt=""
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
+              />
+              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
                 Golden Retriever
               </div>
             </div>
-            <div class="p-4 flex flex-col gap-2">
-              <div class="flex justify-between flex-1">
-                <div class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A] xl:font-semibold dark:text-[#E2E3E0]">
-                  Archie
-                </div>
-                <div class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1 xl:hidden">
-                  <i
-                    data-lucide="face-slightly-smiling"
-                    width="15"
-                    height="15"
-                    stroke-width="3"
-                    color="#8D4B00"
-                  ></i>
-                  3.8k smiles
-                </div>
-                <div class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center">
-                  2 years old
-                </div>
+            <div className="flex flex-col gap-1 pt-4">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-xl text-stone-200">Archie</h4>
+                <span className="text-amber-300 font-semibold text-xs">
+                  3 Years Old
+                </span>
               </div>
-              <p class="font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] dark:text-[#D8C3AD]">
-                Radiant park sprinter & swimming enthusiast
+              <p className="font-normal text-sm leading-5 text-stone-300">
+                Radiant park sprinter &amp; swimming enthusiast
               </p>
-              <div class="flex p-[2px] gap-[6px]">
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+              <div className="flex flex-wrap gap-1 pt-1">
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Gentle
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Devoted
-                </div>
-                <div class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] dark:bg-[#282A29] dark:text-[#D8C3AD]">
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
                   Joyous
-                </div>
-              </div>
-              <div class="flex items-center flex-1 justify-between xl:hidden">
-                <div class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1">
-                  <i
-                    data-lucide="map-pin"
-                    width="12"
-                    height="15"
-                    stroke-width="2"
-                    color="#887364"
-                  ></i>
-                  Seattwe, WA
-                </div>
-                <div class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal">
-                  View Profile
-                  <i
-                    data-lucide="chevron-right"
-                    width="10"
-                    height="12"
-                    stroke-width="2"
-                    color="#2E1500"
-                  ></i>
-                </div>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

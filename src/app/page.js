@@ -8,9 +8,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Breeds />
-      <Gallery />
+      <main className="w-full bg-zinc-950">
+        <div className="flex flex-col w-full">
+          <Hero />
+          <Breeds />
+          <Gallery />
+        </div>
+      </main>
       <Footer />
     </>
   );
