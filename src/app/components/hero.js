@@ -1,3 +1,5 @@
+import HeroCard from "./heroCard";
+
 export default function Hero() {
   return (
     <section
@@ -81,79 +83,21 @@ export default function Hero() {
             </a>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 w-full max-w-lg">
-            <div className="flex flex-col gap-1 p-4 rounded-3xl bg-zinc-900 shadow-sm">
-              <div className="flex items-center justify-between text-stone-300 font-semibold text-xs">
-                <span>Friendliness</span>
-                <svg
-                  aria-hidden="true"
-                  className="shrink-0 text-amber-300 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx={12} cy={12} r={9} />
-                  <path d="M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01" />
-                </svg>
-              </div>
-              <span className="font-bold text-xl text-stone-200">10 / 10</span>
-              <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden mt-1">
-                <div className="bg-amber-500 h-full w-full rounded-full" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-1 p-4 rounded-3xl bg-zinc-900 shadow-sm">
-              <div className="flex items-center justify-between text-stone-300 font-semibold text-xs">
-                <span>Energy Level</span>
-                <svg
-                  aria-hidden="true"
-                  className="shrink-0 text-amber-300 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z" />
-                </svg>
-              </div>
-              <span className="font-bold text-xl text-stone-200">Vibrant</span>
-              <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden mt-1">
-                <div className="bg-amber-500 h-full w-4/5 rounded-full" />
-              </div>
-            </div>
-            <div className="col-span-2 sm:col-span-1 flex flex-col gap-1 p-4 rounded-3xl bg-zinc-900 shadow-sm">
-              <div className="flex items-center justify-between text-stone-300 font-semibold text-xs">
-                <span>Mood Boost</span>
-                <svg
-                  aria-hidden="true"
-                  className="shrink-0 text-amber-300 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 3c1 5 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 3 1 4 2 4 2-3 1-6 1-9Z" />
-                </svg>
-              </div>
-              <span className="font-bold text-xl text-stone-200">Instant</span>
-              <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden mt-1">
-                <div className="bg-amber-500 h-full w-full rounded-full" />
-              </div>
-            </div>
+            <HeroCard
+              title="Friendliness"
+              body="10 / 10"
+              d="M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01"
+            />
+            <HeroCard
+              title="Energy Level"
+              body="Vibrant"
+              d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"
+            />
+            <HeroCard
+              title="Mood Boost"
+              body="Instant"
+              d="M12 3c1 5 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 3 1 4 2 4 2-3 1-6 1-9Z"
+            />
           </div>
         </div>
         <div className="lg:col-span-5 relative">
