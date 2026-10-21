@@ -1,4 +1,4 @@
-export default function HeroCard({ title, d, body, w }) {
+export default function HeroCard({ title, d, body, w, circle }) {
   return (
     <div className="flex flex-col gap-1 p-4 rounded-3xl bg-zinc-900 shadow-sm">
       <div className="flex items-center justify-between text-stone-300 font-semibold text-xs">
@@ -16,7 +16,7 @@ export default function HeroCard({ title, d, body, w }) {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <circle cx={12} cy={12} r={9} />
+          {circle && <circle cx={12} cy={12} r={9} />}
           <path d={d} />
         </svg>
       </div>

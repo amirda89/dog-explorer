@@ -88,6 +88,7 @@ export default function Hero() {
               body="10 / 10"
               d="M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01"
               w="full"
+              circle
             />
             <HeroCard
               title="Energy Level"
