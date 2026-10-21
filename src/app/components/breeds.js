@@ -1,3 +1,6 @@
+import BreedsButton from "./breedsButton";
+import { BreedsCard } from "./breedsCard";
+
 export default function Breeds() {
   return (
     <section
@@ -59,42 +62,12 @@ export default function Breeds() {
           </div>
         </div>
         <div className="flex items-center gap-2 overflow-x-auto pb-1">
-          <button
-            className="px-4 py-1 rounded-full bg-amber-500 text-amber-950 font-semibold text-xs whitespace-nowrap shadow-sm"
-            type="button"
-          >
-            All Breeds
-          </button>
-          <button
-            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
-            type="button"
-          >
-            Pembroke Welsh Corgi
-          </button>
-          <button
-            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
-            type="button"
-          >
-            Golden Retriever
-          </button>
-          <button
-            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
-            type="button"
-          >
-            French Bulldog
-          </button>
-          <button
-            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
-            type="button"
-          >
-            Shiba Inu
-          </button>
-          <button
-            className="px-4 py-1 rounded-full bg-zinc-900 text-stone-300 hover:text-stone-200 hover:bg-zinc-800 font-semibold text-xs whitespace-nowrap transition-colors"
-            type="button"
-          >
-            Samoyed
-          </button>
+          <BreedsButton text="All Breeds" active />
+          <BreedsButton text="Pembroke Welsh Corgi" />
+          <BreedsButton text="Golden Retriever" />
+          <BreedsButton text="French Bulldog" />
+          <BreedsButton text="Shiba Inu" />
+          <BreedsButton text="Samoyed" />
         </div>
         <div className="w-full bg-zinc-900 p-6 rounded-3xl shadow-md flex flex-col md:flex-row items-center justify-between gap-4 relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-300/10 rounded-full blur-2xl pointer-events-none" />
@@ -147,108 +120,30 @@ export default function Breeds() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
-              <img
-                alt=""
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
-              />
-              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
-                Pembroke Welsh Corgi
-              </div>
-            </div>
-            <div className="flex flex-col gap-1 pt-4">
-              <div className="flex items-center justify-between">
-                <h4 className="font-bold text-xl text-stone-200">Barnaby</h4>
-                <span className="text-amber-300 font-semibold text-xs">
-                  2 Years Old
-                </span>
-              </div>
-              <p className="font-normal text-sm leading-5 text-stone-300">
-                Loves open fields &amp; warm nap spots
-              </p>
-              <div className="flex flex-wrap gap-1 pt-1">
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Affectionate
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Alert
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Smart
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
-              <img
-                alt=""
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
-              />
-              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
-                French Bulldog
-              </div>
-            </div>
-            <div className="flex flex-col gap-1 pt-4">
-              <div className="flex items-center justify-between">
-                <h4 className="font-bold text-xl text-stone-200">Milo</h4>
-                <span className="text-amber-300 font-semibold text-xs">
-                  1.5 Years Old
-                </span>
-              </div>
-              <p className="font-normal text-sm leading-5 text-stone-300">
-                Curious couch companion &amp; snore champion
-              </p>
-              <div className="flex flex-wrap gap-1 pt-1">
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Quiet
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Loving
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Easygoing
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="group flex flex-col bg-zinc-900 rounded-3xl p-4 shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div className="relative w-full h-64 rounded-3xl overflow-hidden bg-zinc-700">
-              <img
-                alt=""
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                src="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
-              />
-              <div className="absolute top-2 left-2 px-4 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-stone-200 font-semibold text-xs">
-                Golden Retriever
-              </div>
-            </div>
-            <div className="flex flex-col gap-1 pt-4">
-              <div className="flex items-center justify-between">
-                <h4 className="font-bold text-xl text-stone-200">Archie</h4>
-                <span className="text-amber-300 font-semibold text-xs">
-                  3 Years Old
-                </span>
-              </div>
-              <p className="font-normal text-sm leading-5 text-stone-300">
-                Radiant park sprinter &amp; swimming enthusiast
-              </p>
-              <div className="flex flex-wrap gap-1 pt-1">
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Gentle
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Devoted
-                </span>
-                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-stone-300 font-semibold text-xs">
-                  Joyous
-                </span>
-              </div>
-            </div>
-          </div>
+          <BreedsCard
+            imgSrc="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
+            type="Pembroke Welsh Corgi"
+            name="Barnaby"
+            age="2 Years"
+            desc="Loves open fields &amp; warm nap spots"
+            character={{ 1: "Affectionate", 2: "Alert", 3: "Smart" }}
+          />
+          <BreedsCard
+            imgSrc="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
+            type="French Bulldog"
+            name="Milo"
+            age="1.5 Years"
+            desc="Curious couch companion &amp; snore champion"
+            character={{ 1: "Quiet", 2: "Loving", 3: "Easygoing" }}
+          />
+          <BreedsCard
+            imgSrc="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
+            type="Golden Retriever"
+            name="Archie"
+            age="3 Years"
+            desc="Radiant park sprinter &amp; swimming enthusiast"
+            character={{ 1: "Gentle", 2: "Devoted", 3: "Joyous" }}
+          />
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { NavBar } from "./navbar";
+import { NavItem } from "./navItem";
 
 export default function Header() {
   return (
@@ -12,7 +12,11 @@ export default function Header() {
             Dog Explorer
           </span>
         </div>
-        <NavBar />
+        <nav className="flex items-center gap-2 md:gap-4">
+          <NavItem title="Discover" href="#discover" active />
+          <NavItem title="Breeds" href="#breeds" />
+          <NavItem title="Gallery" href="#gallery" />
+        </nav>
         <div className="flex items-center gap-2">
           <button
             aria-label="Toggle color mode"
