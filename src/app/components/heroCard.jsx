@@ -1,4 +1,5 @@
 export default function HeroCard({ title, d, body, w, circle }) {
+  const width = w === "full" ? "w-full" : "w-4/5";
   return (
     <div className="flex flex-col gap-1 p-4 rounded-3xl bg-zinc-900 shadow-sm">
       <div className="flex items-center justify-between text-stone-300 font-semibold text-xs">
@@ -22,10 +23,7 @@ export default function HeroCard({ title, d, body, w, circle }) {
       </div>
       <span className="font-bold text-xl text-stone-200">{body}</span>
       <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden mt-1">
-        <div
-          className="bg-amber-500 h-full rounded-full"
-          style={{ width: `${w}` }}
-        />
+        <div className={`bg-amber-500 h-full rounded-full ${width}`} />
       </div>
     </div>
   );

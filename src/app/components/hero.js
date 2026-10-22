@@ -1,6 +1,27 @@
 import HeroCard from "./heroCard";
 
 export default function Hero() {
+  const heroCard = [
+    {
+      title: "Friendliness",
+      body: "10 / 10",
+      d: "M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01",
+      w: "full",
+      circle: true,
+    },
+    {
+      title: "Energy Level",
+      body: "Vibrant",
+      d: "m13 2-9 12h7l-1 8 10-12h-7l1-8Z",
+      w: "4/5",
+    },
+    {
+      title: "Mood Boost",
+      body: "Instant",
+      d: "M12 3c1 5 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 3 1 4 2 4 2-3 1-6 1-9Z",
+      w: "full",
+    },
+  ];
   return (
     <section
       className="bg-zinc-950 font-sans text-base text-stone-200 relative isolate w-full px-4 lg:px-8 pt-6 pb-10 overflow-hidden"
@@ -16,7 +37,7 @@ export default function Hero() {
           </div>
           <h1 className="font-extrabold text-4xl leading-tight sm:text-5xl tracking-tight text-stone-200">
             Meet a New
-            <span className="text-amber-500 relative inline-block">
+            <span className="text-amber-500 relative inline-block pl-2">
               Friend
               <svg
                 className="absolute -bottom-1 left-0 w-full h-2 text-amber-500"
@@ -83,25 +104,16 @@ export default function Hero() {
             </a>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 w-full max-w-lg">
-            <HeroCard
-              title="Friendliness"
-              body="10 / 10"
-              d="M8 14s1 3 4 3 4-3 4-3M8 9h.01M16 9h.01"
-              w="100%"
-              circle
-            />
-            <HeroCard
-              title="Energy Level"
-              body="Vibrant"
-              d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"
-              w="80%"
-            />
-            <HeroCard
-              title="Mood Boost"
-              body="Instant"
-              d="M12 3c1 5 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 3 1 4 2 4 2-3 1-6 1-9Z"
-              w="100%"
-            />
+            {heroCard.map((card) => (
+              <HeroCard
+                title={card.title}
+                d={card.d}
+                w={card.w}
+                body={card.body}
+                circle={card.circle}
+                key={card.title}
+              />
+            ))}
           </div>
         </div>
         <div className="lg:col-span-5 relative">

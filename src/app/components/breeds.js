@@ -32,6 +32,18 @@ export default function Breeds() {
     },
   ];
 
+  const breedsButton = [
+    { text: "All Breeds", active: true },
+    { text: "Pembroke Welsh Corgi" },
+    ,
+    { text: "Golden Retriever" },
+    ,
+    { text: "French Bulldog" },
+    ,
+    { text: "Shiba Inu" },
+    { text: "Samoyed" },
+  ];
+
   return (
     <section
       className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10 bg-zinc-900/50"
@@ -92,12 +104,9 @@ export default function Breeds() {
           </div>
         </div>
         <div className="flex items-center gap-2 overflow-x-auto pb-1">
-          <BreedsButton text="All Breeds" active />
-          <BreedsButton text="Pembroke Welsh Corgi" />
-          <BreedsButton text="Golden Retriever" />
-          <BreedsButton text="French Bulldog" />
-          <BreedsButton text="Shiba Inu" />
-          <BreedsButton text="Samoyed" />
+          {breedsButton.map((item) => (
+            <BreedsButton key={item.text} item={item} />
+          ))}
         </div>
         <div className="w-full bg-zinc-900 p-6 rounded-3xl shadow-md flex flex-col md:flex-row items-center justify-between gap-4 relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-300/10 rounded-full blur-2xl pointer-events-none" />

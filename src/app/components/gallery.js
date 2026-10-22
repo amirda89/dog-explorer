@@ -1,6 +1,32 @@
 import { GalleryCard } from "./galleryCard";
 
 export default function Gallery() {
+  const galleryCard = [
+    {
+      imgSrc:
+        "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80",
+      name: "Summer Garden Stroll",
+      type: "Corgi Companion",
+    },
+    {
+      imgSrc:
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80",
+      name: "Curious Head-tilt",
+      type: "French Bulldog",
+    },
+    {
+      imgSrc:
+        "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg",
+      name: "Sunlit Afternoon",
+      type: "Golden Retriever",
+    },
+    {
+      imgSrc: "https://images.dog.ceo/breeds/australian-shepherd/pepper.jpg",
+      name: "Forest Wanderer",
+      type: "Aussie Shepherd",
+    },
+  ];
+
   return (
     <section
       className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10"
@@ -21,26 +47,14 @@ export default function Gallery() {
           </p>
         </div>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-4">
-          <GalleryCard
-            imgSrc="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
-            name="Summer Garden Stroll"
-            type="Corgi Companion"
-          />
-          <GalleryCard
-            imgSrc="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
-            name="Curious Head-tilt"
-            type="French Bulldog"
-          />
-          <GalleryCard
-            imgSrc="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
-            name="Sunlit Afternoon"
-            type="Golden Retriever"
-          />
-          <GalleryCard
-            imgSrc="https://images.dog.ceo/breeds/australian-shepherd/pepper.jpg"
-            name="Forest Wanderer"
-            type="Aussie Shepherd"
-          />
+          {galleryCard.map((cardItem) => (
+            <GalleryCard
+              key={cardItem.imgSrc}
+              imgSrc={cardItem.imgSrc}
+              name={cardItem.name}
+              type={cardItem.type}
+            />
+          ))}
         </div>
         <div className="pt-4">
           <button
