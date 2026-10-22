@@ -2,6 +2,36 @@ import BreedsButton from "./breedsButton";
 import { BreedsCard } from "./breedsCard";
 
 export default function Breeds() {
+  const breedsCard = [
+    {
+      imgSrc:
+        "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80",
+      type: "Pembroke Welsh Corgi",
+      name: "Barnaby",
+      age: "2 Years",
+      desc: "Loves open fields &amp; warm nap spots",
+      character: { 1: "Affectionate", 2: "Alert", 3: "Smart" },
+    },
+    {
+      imgSrc:
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80",
+      type: "French Bulldog",
+      name: "Milo",
+      age: "1.5 Years",
+      desc: "Curious couch companion &amp; snore champion",
+      character: { 1: "Quiet", 2: "Loving", 3: "Easygoing" },
+    },
+    {
+      imgSrc:
+        "https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg",
+      type: "Golden Retriever",
+      name: "Archie",
+      age: "3 Years",
+      desc: "Radiant park sprinter &amp; swimming enthusiast",
+      character: { 1: "Gentle", 2: "Devoted", 3: "Joyous" },
+    },
+  ];
+
   return (
     <section
       className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10 bg-zinc-900/50"
@@ -120,30 +150,9 @@ export default function Breeds() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-          <BreedsCard
-            imgSrc="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
-            type="Pembroke Welsh Corgi"
-            name="Barnaby"
-            age="2 Years"
-            desc="Loves open fields &amp; warm nap spots"
-            character={{ 1: "Affectionate", 2: "Alert", 3: "Smart" }}
-          />
-          <BreedsCard
-            imgSrc="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
-            type="French Bulldog"
-            name="Milo"
-            age="1.5 Years"
-            desc="Curious couch companion &amp; snore champion"
-            character={{ 1: "Quiet", 2: "Loving", 3: "Easygoing" }}
-          />
-          <BreedsCard
-            imgSrc="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
-            type="Golden Retriever"
-            name="Archie"
-            age="3 Years"
-            desc="Radiant park sprinter &amp; swimming enthusiast"
-            character={{ 1: "Gentle", 2: "Devoted", 3: "Joyous" }}
-          />
+          {breedsCard.map((breed) => (
+            <BreedsCard key={breed.name} breed={breed} />
+          ))}
         </div>
       </div>
     </section>

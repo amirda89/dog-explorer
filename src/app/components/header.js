@@ -1,6 +1,11 @@
 import { NavItem } from "./navItem";
 
 export default function Header() {
+  const navItem = [
+    { title: "Discover", href: "#discover", active: true },
+    { title: "Breeds", href: "#breeds" },
+    { title: "Gallery", href: "#gallery" },
+  ];
   return (
     <header className="sticky top-0 w-full z-50 bg-zinc-900/90 backdrop-blur-xl shadow-[0_12px_32px_-8px_rgba(18,20,19,0.7)]">
       <div className="w-full px-4 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-2 sm:h-16 sm:py-0">
@@ -13,9 +18,9 @@ export default function Header() {
           </span>
         </div>
         <nav className="flex items-center gap-2 md:gap-4">
-          <NavItem title="Discover" href="#discover" active />
-          <NavItem title="Breeds" href="#breeds" />
-          <NavItem title="Gallery" href="#gallery" />
+          {navItem.map((item) => (
+            <NavItem item={item} key={item.title} />
+          ))}
         </nav>
         <div className="flex items-center gap-2">
           <button
