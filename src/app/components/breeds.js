@@ -46,7 +46,7 @@ export default function Breeds() {
 
   return (
     <section
-      className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10 bg-zinc-900/50"
+      className="bg-zinc-950 font-sans text-base text-stone-200 w-full px-4 lg:px-8 py-10"
       id="breeds"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-6">

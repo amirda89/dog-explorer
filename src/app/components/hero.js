@@ -118,9 +118,9 @@ export default function Hero() {
         </div>
         <div className="lg:col-span-5 relative">
           <div className="relative bg-zinc-900 p-4 rounded-3xl shadow-xl overflow-hidden group">
-            <div className="relative w-full h-[420px] rounded-3xl overflow-hidden bg-zinc-700">
+            <div className="relative w-full h-105 rounded-3xl overflow-hidden bg-zinc-700">
               <img
-                alt=""
+                alt="image"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 src="https://images.dog.ceo/breeds/retriever-golden/n02099601_100.jpg"
               />
@@ -131,7 +131,7 @@ export default function Hero() {
               <div className="absolute top-4 right-4 px-4 py-1 rounded-full bg-amber-500 text-amber-950 font-semibold text-xs shadow-sm">
                 Gentle Giant
               </div>
-              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
               <div className="absolute bottom-4 inset-x-4 flex items-end justify-between">
                 <div>
                   <h3 className="font-bold text-2xl text-stone-200">
