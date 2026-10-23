@@ -1,6 +1,11 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
+export const metadata = {
+  title: "Dog Explorer",
+  description: "Dog Explorer Web",
+};
+
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
